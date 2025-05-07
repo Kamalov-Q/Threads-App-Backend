@@ -1,0 +1,19 @@
+GET http://localhost:3000/comments HTTP/1.1
+
+###
+GET http://localhost:3000/comments?parentId=x681b87c6c8d3cab2c00b342a HTTP/1.1
+
+###
+
+POST http://localhost:3000/comments HTTP/1.1
+content-type: application/json
+
+{
+    "text" : "Hi bro wassup",
+    "userId" : "681a50a85c713eaf3b67d653",
+    "parentId" : "681b87c6c8d3cab2c00b342a"
+}
+
+###
+
+DELETE http://localhost:3000/comments/681a50575c713eaf3b67d64c HTTP/1.1

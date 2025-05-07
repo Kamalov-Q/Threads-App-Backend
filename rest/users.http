@@ -1,0 +1,16 @@
+GET http://localhost:3000/users HTTP/1.1
+
+###
+
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Kamalov",
+     "age": 19
+}
+
+
+###
+
+DELETE http://localhost:3000/users/681a3021e5916d2314738995 HTTP/1.1
